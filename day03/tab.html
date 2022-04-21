@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            ul {
+                border: #000 1px solid;
+                display: flex;
+            }
+
+            div {
+                display: none;
+            }
+
+            li {
+                height: 40px;
+                line-height: 40px;               ;
+                width: 100px;
+                background-color: #000;
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <div>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+        </div>
+        <div>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+        </div>
+        <div>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+            <p>孙敏花真好看</p>
+        </div>
+    </body>
+
+</html>
+<script>
+    let lis = document.querySelectorAll("li")
+    let divs = document.querySelectorAll("div")
+    lis.forEach((item, index) => {
+        item.onmouseover = () => {
+            divs[index].style.display = "block"
+            item.style.backgroundColor = " #fff"
+            item.style.color = " #000"
+        }
+        item.onmouseout = () => {
+            item.style.color = " #fff"
+            divs[index].style.display = "none"
+            item.style.backgroundColor = "#000"
+        }
+    })
+
+
+
+</script>

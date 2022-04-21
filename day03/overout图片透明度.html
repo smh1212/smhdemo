@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            img {
+                opacity: .5;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table border="1" cellspacing="0">
+
+            <tr>
+                <td><img src="./1.jpg" alt=""></td>
+                <td><img src="./1.jpg" alt=""></td>
+                <td><img src="./1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./1.jpg" alt=""></td>
+                <td><img src="./1.jpg" alt=""></td>
+                <td><img src="./1.jpg" alt=""></td>
+            </tr>
+        </table>
+
+    </body>
+
+</html>
+<script>
+    let imgs = document.querySelectorAll("img")
+    imgs.forEach(item => {
+        // console.log(item);
+        item.onmouseover=() => {
+            item.style.opacity=1
+        }
+        item.onmouseout=() => {
+            item.style.opacity=.5
+        }
+    })
+</script>
