@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .mask {
+                position: fixed;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, .5);
+                display: none;
+            }
+
+            .box {
+                width: 300px;
+                height: 300px;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                margin: auto;
+                background-color: #fff;
+            }
+            span{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button>点击</button>
+        <div class="mask">
+            <div class="box">
+                孙敏花真好看
+                <span>X</span>
+            </div>
+        </div>
+    </body>
+    <script>
+        let btn = document.querySelector("button")
+        let mask = document.querySelector(".mask")
+        let del = document.querySelector("span")
+        btn.onclick = () => {
+            mask.style.display="block"
+        }
+        del.onclick=()=>{
+            mask.style.display="none"
+        }
+    </script>
+
+</html>

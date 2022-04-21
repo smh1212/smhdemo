@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>smh控制div属性</title>
+        <style>
+            body,
+            html {
+                text-align: center;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                margin: auto;
+                display: block;
+            }
+
+            .width {
+                width: 200px;
+            }
+
+            .height {
+                height: 200px;
+            }
+
+            .background {
+                background: skyblue;
+            }
+
+            .none {
+                display: none;
+            }
+
+            .reset {}
+        </style>
+    </head>
+
+    <body>
+        <p>
+            <button>变宽</button>
+            <button>变高</button>
+            <button>变色</button>
+            <button>隐藏</button>
+            <button>重置</button>
+
+        </p>
+        <div class="box">
+
+        </div>
+    </body>
+
+</html>
+
+<script>
+    let hrefarr = ['width', 'height', 'background', 'none', 'box']
+    let arrbtn = document.querySelectorAll('button')
+    let box = document.querySelector(".box")
+    arrbtn.forEach((item, index) => {
+        item.onclick = function () {
+            index == 4 ? box.className = "box" : box.classList.add(hrefarr[index])
+        }
+    })
+</script>

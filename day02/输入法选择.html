@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            ul {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <button onclick="tap()">输入法选择</button>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </body>
+
+</html>
+<script>
+    let ul = document.querySelector("ul")
+    let lis = document.querySelectorAll("li")
+    lis.forEach((item, index) => {
+        item.onmousemove = function () {
+            item.style.backgroundColor = "pink"
+        }
+        item.onmouseout = function () {
+            item.style.backgroundColor = ""
+        }
+    })
+    let count=0
+    console.log(0.5==false);
+    tap = function () {
+        count++
+        if(count%2==0){
+            ul.style.display = "none"
+        }
+        else{
+            ul.style.display = "block"
+
+        }
+
+    }
+</script>

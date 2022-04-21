@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body,
+            html {
+                background-color: #f7fafd;
+            }
+
+            .header {
+                height: 3.125rem;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 1.25rem;
+                box-sizing: border-box;
+                font-size: 1.25rem;
+                background-color: #fff;
+            }
+
+            .back {
+                font-weight: 900;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .title {
+                padding: 1.5625rem;
+                font-size: 1.275rem;
+            }
+
+            .myinput>div {
+                padding: 1.25rem;
+                background-color: #fff;
+                border: .0625rem solid #f7fafd;
+                color: #666;
+
+                font-size: 1.2rem;
+                align-items: center;
+
+                display: flex;
+
+            }
+
+            div>p:nth-child(1) {
+                width: 8.05rem;
+            }
+
+            div>p:nth-child(2) {
+                flex: 1;
+                /* color: #ccc; */
+                font-size: 1.2rem;
+            }
+
+            div>p:nth-child(3) {
+                width: .3125rem;
+                height: .3125rem;
+                border-left: .1925rem solid #ccc;
+                border-top: .1925rem solid #ccc;
+                transform: rotate(135deg);
+
+            }
+
+            #desc {
+                background-color: #f2f2f2;
+                color: #ccc;
+                padding: 1.25rem;
+                border-radius: .625rem;
+                height: 2.5rem;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="back">
+                ←
+            </div>
+            <div>填写签约信息</div>
+            <div></div>
+        </div>
+        <div class="title">
+            签约信息
+        </div>
+        <div class="myinput">
+            <div>
+                <p>选择家人</p>
+                <p>洛西社区卫生服务站</p>
+                <p></p>
+            </div>
+
+            <div>
+                <p>与本人关系</p>
+                <p>李明明团队</p>
+                <p></p>
+            </div>
+            <div>
+                <p>签约医生</p>
+                <p>李明明</p>
+                <p></p>
+            </div>
+            <div>
+                <p>服务版</p>
+                <p>老年服务包</p>
+                <p></p>
+            </div>
+            <div>
+                <p>签约周期</p>
+                <p>1年</p>
+                <p></p>
+            </div>
+            <div>
+                <p>生效日期</p>
+                <p>2020年09月01日</p>
+                <p></p>
+            </div>
+            <div>
+                <p>费用</p>
+                <p style="color:red">￥120</p>
+
+            </div>
+            <div>
+                <p>备注</p>
+                <p id="desc">请填写备注</p>
+
+            </div>
+        </div>
+    </body>
+
+</html>

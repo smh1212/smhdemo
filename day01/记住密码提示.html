@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="checkbox" name="" id="">
+        <p>啦啦啦</p>
+    </div>
+</body>
+</html>
+<script>
+    var div =document.querySelector("div")
+    var p =document.querySelector("p")
+    div.onmouseover=function(){
+        p.style.display="block"
+    }
+    div.onmouseout=function(){
+        p.style.display="none"
+    }
+</script>

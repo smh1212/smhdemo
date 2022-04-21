@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            body,
+            html {
+                background-color: #f7fafd;
+                height: 100vh;
+            }
+
+            .aside {
+                font-size: 1rem;
+                padding: 1.25rem;
+                height: 3.75rem;
+                color: #ccc;
+            }
+
+            .header {
+                height: 3.125rem;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 1.25rem;
+                box-sizing: border-box;
+                font-size: 1.25rem;
+                background-color: #fff;
+            }
+
+            .back {
+                font-weight: 900;
+            }
+
+            .accomplish {
+                font-size: 1.25rem;
+                color: #80db01;
+            }
+
+            .myinput>div {
+                padding: 1.25rem;
+                background-color: #fff;
+                border: .0625rem solid #f7fafd;
+
+
+                font-size: 1.25rem;
+                align-items: center;
+
+                display: flex;
+
+            }
+            div>p:nth-child(1){
+                width: 8.05rem;
+            }
+
+            div>p:nth-child(2) {
+                flex: 1;
+                color: #ccc;
+                font-size: 1rem;
+            }
+            div>p:nth-child(3){
+                width: .3125rem;
+                height: .3125rem;
+                border-left: .1925rem solid #ccc;
+                border-top: .1925rem solid #ccc;
+                transform: rotate(135deg);
+                
+            }
+            .section{
+                text-align: center;
+                width: 100%;
+                color: #80db01;
+                margin: .625rem;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+
+            <div class="back">
+                ←
+            </div>
+            <div>关联家人信息</div>
+            <div class=" accomplish">完成</div>
+        </div>
+        <div class="aside">
+            <small>家人信息</small>
+        </div>
+        <div class="myinput">
+            <div>
+                <p>选择家人</p>
+                <p>请选择居民家人信息</p>
+                <p></p>
+            </div>
+            <div>
+                <p>与本人关系</p>
+                <p>请选择家人与该居民关系</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="section">
+            +新增关联家人
+        </div>
+    </body>
+
+</html>

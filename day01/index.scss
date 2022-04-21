@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    padding: 1.25rem;
+}
+
+.header {
+    display: flex;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+}
+
+.aside {
+    position: relative;
+    height: 21rem;
+    width: 100%;
+
+    ul:nth-child(1) {
+        display: flex;
+        padding-bottom: 1.25rem;
+        margin-top: 1.875rem;
+        flex-wrap: wrap;
+        color: #f4f4f4;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(90deg, #3ed4a9, #52d7c0);
+        border-radius: 1.875rem 1.875rem 0 0;
+
+        li {
+            // height: 7.5rem;
+            width: 33.33%;
+            box-sizing: border-box;
+            padding: .9rem;
+            line-height: 2rem;
+
+            p:nth-child(2) {
+                color: #fff;
+            }
+
+
+        }
+    }
+
+    ul:nth-child(2) {
+        width: 100%;
+        z-index: 99;
+        background-color: #fff;
+
+        border-radius: 1rem 1rem 0 0;
+        position: absolute;
+        top: 13rem;
+        display: flex;
+        box-shadow: 10px 10px 10px #f4f4f4;
+
+        li {
+            text-align: center;
+            flex: 1;
+
+            div {
+                margin: 1rem auto;
+                border-radius: .3125rem;
+                width: 3.125rem;
+                height: 3.125rem;
+            }
+
+
+        }
+
+        li:nth-child(1) div {
+            background-color: blue;
+
+        }
+
+        li:nth-child(2) div {
+            background-color: #fddb78;
+
+        }
+
+        li:nth-child(3) div {
+            background-color: #fa746b;
+
+        }
+    }
+}
+
+.section {
+    .top {
+        display: flex;
+        justify-content: space-between;
+        height: 3.125rem;
+        align-items: center;
+
+        .left {
+            font-size: 1.2rem;
+        }
+
+        .right {
+            padding-right: 1.25rem;
+
+            // position: relative;
+            span {
+                border-left: .125rem solid #000;
+                border-top: .125rem solid #000;
+                width: .3125rem;
+                height: .3125rem;
+                // position: absolute;
+                display: inline-block;
+
+                transform: translate(.375rem, -0.1875rem) rotate(135deg);
+
+            }
+        }
+
+    }
+
+    ul {
+        li {
+            width: 90%;
+            margin: .625rem auto;
+            padding: 1.25rem;
+            border: .0625rem #ccc solid;
+            line-height: 1.875rem;
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.275);
+
+            .desc {
+                display: flex;
+                justify-content: space-between;
+                .age{
+                    margin-left: -130px;
+                }
+            }
+
+            div {
+                text-align: left;
+                p{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
